@@ -34,6 +34,10 @@ The main advantages of using a JWT are that it is more compact and therefore has
 
 ![image](https://github.com/Jodebonis/QU.WordFinderAPI/assets/22944478/58f44b32-4e43-474b-8c75-497be37d78c1)
 
+- This middleware will catch any unhandled exceptions that occur during the processing of the requests and will generate an error response to the client.
+
+![image](https://github.com/Jodebonis/QU.WordFinderAPI/assets/22944478/553d8d93-83ac-4255-ac81-beb62975518d)
+
 
 ## Structure of the project
 
