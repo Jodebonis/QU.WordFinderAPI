@@ -17,10 +17,23 @@ I tried  that the  classes  depend upon interfaces  instead of concrete classes 
 - Also I developed the project trying to implement it in a high performance way in terms of efficient algorithm and utilization of system resources.
 So I used Redis that it makes the application faster and more efficient. By using caching, we can make our applications response quickly, reduce delays and an overall improved user experience.
 
+![image](https://github.com/Jodebonis/QU.WordFinderAPI/assets/22944478/bf280445-ade7-420e-bfaf-f90675f082ca)
+
+
 - I secured the .NET core web API project with JWT which is a popular way of authenticating .NET core web APIs. They could only be accessed by authenticated users.
 The main advantages of using a JWT are that it is more compact and therefore has a smaller size.
 
+![image](https://github.com/Jodebonis/QU.WordFinderAPI/assets/22944478/a6d915c5-8048-47ef-88be-7d452b240411)
+
+
 - For business validation rules for WordFinder entity, I used Fluent Validation which is a popular .NET library that allow me to define validation rules in a fluent, intuitive way, making the code more readable and maintainable.
+
+  ![image](https://github.com/Jodebonis/QU.WordFinderAPI/assets/22944478/9420df33-9148-49bf-a90e-112e5b37ed94)
+
+- To search for the words, I implemented  Asynchronous programming methods that  allows  to perform these operations without blocking the calling thread. When an asynchronous operation is started, the FindLeftToRightHorizontally and  FindTopToBottomVertically methods continue to execute other code while it waits for the operation to complete. The function is notified when the operation is complete and can continue with the following line of code.
+
+![image](https://github.com/Jodebonis/QU.WordFinderAPI/assets/22944478/58f44b32-4e43-474b-8c75-497be37d78c1)
+
 
 ## Structure of the project
 
@@ -59,7 +72,7 @@ I created the UnitTest project using Xunit and Moq.
 - 5.Run the application.
 - 6.dotnet run
 
-## Generating Auth Tokens 
+## Generating Auth Tokens and Word Finder execution
 Time to get access! To interact with the WordFinderAPI, you'll need an authorization token from the JWT service.
 
 - 1.Replace the User Name and Password in the appsettings.json file  in the QU.WordFinderAPI folder.
@@ -74,3 +87,8 @@ To run the tests project and ensure everything's smooth, follow these simple ste
 - 1.Navigate to the project's root folder.
 - 2.Jump into the WordFinderAPI.UnitTest folder: cd WordFinderAPI.UnitTest
 - 3.Execute the tests using this command: dotnet run test
+
+![image](https://github.com/Jodebonis/QU.WordFinderAPI/assets/22944478/a044655e-bce8-43f1-b472-ed68e551e76b)
+
+
+
